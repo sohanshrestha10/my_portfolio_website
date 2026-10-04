@@ -1,0 +1,461 @@
+body {
+    font-family: 'Times New Roman', sans-serif;
+    color: #4a2630;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background-color: #4b43bd;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo-container {
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: white;
+    border-radius: 12px;
+    min-height: 46px;
+}
+
+.logo-container img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.nav-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    min-height: 46px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #08041a;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 5px;
+    border-bottom: 3px solid transparent;
+}
+
+nav ul li a:hover {
+    color: #4d466b;
+    border-bottom: 2px solid #190930;
+}
+
+.search-bar-container {
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    min-height: 46px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.search-form input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1.3px solid #625ea2;
+    border-radius: 6px;
+    outline: none;
+}
+
+.search-form input:focus {
+    border-color: #2f2c52;
+}
+
+.search-form button {
+    color: #2b264a;
+    background-color: #e8e4ff;
+    border: 1.2px solid #625ea2;
+    border-radius: 6px;
+    padding: 10px 14px;
+    cursor: pointer;
+    min-width: 78px;
+    font-weight: bold;
+}
+
+.search-form button:hover {
+    color: white;
+    background-color: #625e97;
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 1rem;
+}
+
+h1,
+h2,
+h3 {
+    color: #24135f;
+    border-bottom: 2px solid #8a89ac;
+    width: fit-content;
+    padding-bottom: 6px;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+.about-container,
+.skills-container,
+.projects-container,
+.contact-container,
+.find-me-on-container,
+.education-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgb(211, 211, 211);
+    margin-bottom: 30px;
+}
+
+.about-container:hover,
+.skills-container:hover,
+.projects-container:hover,
+.contact-container:hover,
+.find-me-on-container:hover,
+.education-container:hover {
+    box-shadow: 0 8px 20px rgb(164, 164, 164);
+    transform: translateY(-2px);
+}
+
+.about-container {
+    display: flex;
+    gap: 4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-container img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(125, 124, 125, 0.25);
+}
+
+.about-container p {
+    font-size: 1.05rem;
+}
+
+.about-container a {
+    text-decoration: none;
+    color: #535898;
+}
+
+.about-container a:hover {
+    color: #282a4a;
+}
+
+
+@media (max-width: 768px) {
+    .skills-container {
+        padding: 1.2rem;
+    }
+
+    .skills-container h1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .skills-container dt {
+        font-size: 1.1rem;
+        padding: 10px 14px;
+    }
+
+    .skills-container dd {
+        font-size: 1rem;
+        padding: 12px 15px;
+    }
+}
+
+.projects-container article {
+    padding: 18px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1.5px solid #a9a2c0;
+    box-shadow: 0 3px 8px rgba(214, 106, 138, 0.12);
+}
+
+.projects-container article:hover {
+    transform: translateY(-5px);
+    border-color: #888399;
+    box-shadow: 0 6px 15px rgba(152, 152, 152, 0.2);
+}
+
+.projects-container article h3 {
+    margin-top: 0;
+}
+
+article a {
+    font-size: large;
+    font-weight: bold;
+    color: #535898;
+    text-decoration: none;
+}
+
+article a:hover {
+    color: #3c406d;
+}
+
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-container label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1.2px solid #908c9c;
+    border-radius: 8px;
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+    border-color: #646368;
+}
+
+.contact-container textarea {
+    min-height: 140px;
+}
+
+.contact-container button {
+    width: 140px;
+    padding: 12px 18px;
+    margin-top: 10px;
+    color: #2b264a;
+    background-color: #e8e4ff;
+    border: 1.2px solid #625ea2;
+    border-radius: 8px;
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-container button:hover {
+    color: white;
+    background-color: #625e97;
+}
+
+
+.find-me-on-container a {
+    color: #2b264a;
+    background-color: #e8e4ff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 25px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.find-me-on-container a:hover {
+    color: white;
+    background-color: #625e97;
+}
+
+.education-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.education-container th {
+    background-color: #6b63dc;
+    color: white;
+    padding: 12px;
+    border: 1px solid #8682d6;
+}
+
+.education-container td {
+    padding: 12px;
+    border: 1px solid #8682d6;
+}
+
+
+footer {
+    background-color: #5149be;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(215, 215, 215);
+}
+
+@media (max-width: 768px) {
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .logo-container {
+        width: 120px;
+    }
+
+    .nav-container {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .search-bar-container {
+        width: 90%;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .about-container img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .about-container,
+    .skills-container,
+    .projects-container,
+    .contact-container,
+    .find-me-on-container,
+    .education-container {
+        padding: 1.2rem;
+    }
+
+    h1,
+    h2,
+    h3 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .find-me-on-container a {
+        margin-bottom: 10px;
+    }
+
+    .contact-container input,
+    .contact-container textarea {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .nav-container {
+        width: 90%;
+    }
+
+    nav ul {
+        gap: 18px;
+    }
+
+    .search-bar-container {
+        width: 90%;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .about-container img {
+        max-width: 300px;
+    }
+}
